@@ -4,7 +4,7 @@
 
 (setq circe-network-options `(("Freenode" :port (6667 . 6697)
 															 :use-tls 't
-															 :nick "skeuomorf"
+															 :nick ,irc-handle
 															 :channels (:after-auth "#emacs"
 																											"#clojure"
 																											"#clojurescript"
@@ -18,7 +18,7 @@
 (add-to-list 'circe-network-options `("Mozilla" :host "irc.mozilla.org"
 																			:port (6667 . 6697)
 																			:use-tls 't
-																			:nick "skeuomorf"
+																			:nick ,irc-handle
 																			:channels (:after-auth "#rust"
 																														 "#rust-internals"
 																														 "#rust-gamedev"
