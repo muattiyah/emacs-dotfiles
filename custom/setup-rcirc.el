@@ -7,10 +7,10 @@
 														:channels ("#rust" "#rust-internals" "#rust-gamedev" "#rust-crypto" "#servo" "#rustc" "#rust-lang" "#rust-libs")
 														:encryption tls)))
 
-(setq rcirc-default-nick ,irc-handle)
-(setq rcirc-default-user-name ,irc-handle)
-(setq rcirc-default-full-name ,irc-handle)
-(setq rcirc-authinfo '(("freenode" nickserv ,freenode-password "")
-											 ("moـzilla" nickserv ,mozilla-password "")))
+(setq rcirc-default-nick irc-handle)
+(setq rcirc-default-user-name irc-handle)
+(setq rcirc-default-full-name irc-handle)
+(setq rcirc-authinfo '(("freenode" nickserv freenode-password "")
+											 ("moـzilla" nickserv mozilla-password "")))
 
 (provide 'setup-rcirc)
