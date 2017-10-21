@@ -1,3 +1,13 @@
+;;; setup-editing --- Summary
+;;; Commentary:
+;;; Setup the facilities for different editing modes.
+
+;;; Code:
+(require 'projectile)
+(setq projectile-mode-line
+         '(:eval (format " Projectile[%s]"
+                        (projectile-project-name))))
+
 (require 'asm-mode)
 (add-hook 'asm-mode-hook (lambda ()
 													 (setq indent-tabs-mode nil)))
@@ -20,3 +30,4 @@
 (setq haskell-stylish-on-save 't)
 
 (provide 'setup-editing)
+;;; setup-editing ends here
