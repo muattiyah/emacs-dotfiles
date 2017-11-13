@@ -29,5 +29,9 @@
 (require 'haskell-customize)
 (setq haskell-stylish-on-save 't)
 
+(require 'flycheck)
+(setq flycheck-python-pycompile-executable "/usr/bin/python3")
+
+
 (provide 'setup-editing)
 ;;; setup-editing ends here
