@@ -18,8 +18,11 @@
 (show-paren-mode t)
 
 (add-hook 'emacs-lisp-mode-hook #'prettify-symbols-mode)
-;; (add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode)
 (add-hook 'emacs-lisp-mode-hook #'paredit-mode)
+(add-hook 'scheme-mode-hook #'prettify-symbols-mode)
+(add-hook 'scheme-mode-hook #'paredit-mode)
+;; (add-hook 'inferior-scheme-mode-hook #'paredit-mode)
+;; (add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode)
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; (require 'haskell-interactive-mode)
