@@ -20,7 +20,7 @@
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((python . t)
-	 ;; (shell . t)
+	 (sh . t)
 	 (clojure . t)
 	 (js . t)
 	 (css . t)))
