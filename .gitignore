@@ -5,3 +5,5 @@ games/
 lisp/
 projectile-bookmarks.eld
 *.*~
+/smex-items
+url/
