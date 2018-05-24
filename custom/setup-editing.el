@@ -35,6 +35,10 @@
 (require 'flycheck)
 (setq flycheck-python-pycompile-executable "/usr/bin/python3")
 
+
+
+;;; Common Lisp ;;;
+(load (expand-file-name "~/quicklisp/slime-helper.el"))
 (setq inferior-lisp-program "/usr/local/bin/sbcl")
 (setq slime-contribs '(slime-repl))
 
