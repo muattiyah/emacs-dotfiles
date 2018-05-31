@@ -1,10 +1,10 @@
 (setq rcirc-server-alist '(("irc.freenode.net"
 														:port 6697
-														:channels ("##math"  "##crypto" "##physics" "#haskell" "##opengl" "#blender" "#lisp" "#lispgames" "#clim" "#scheme" "##c++" "#emacs" "##electronics")
+														:channels ("##math" "##crypto" "##physics" "#haskell" "##opengl" "#lisp" "##electronics" "#clojure" "#clojurescript")
 														:encryption tls)
 													 ("irc.mozilla.org"
 														:port 6697
-														:channels ("#rust" "#rust-internals" "#rust-gamedev" "#rust-crypto" "#servo" "#rustc" "#rust-lang" "#rust-libs")
+														:channels ("#rust" "#rust-gamedev" "#rust-crypto")
 														:encryption tls)))
 
 (setq rcirc-default-nick irc-handle)
