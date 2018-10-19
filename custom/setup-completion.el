@@ -2,6 +2,7 @@
 ;; and files.
 (require 'ido)
 (setq ido-enable-flex-matching t)
+(setq ido-auto-merge-work-directories-length -1)
 (ido-mode t)
 
 ;; smex provides completion for M-x.

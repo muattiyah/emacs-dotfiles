@@ -5,8 +5,10 @@
 ;;; Code:
 (require 'projectile)
 (setq projectile-mode-line
-         '(:eval (format " Projectile[%s]"
-                        (projectile-project-name))))
+      '(:eval (format " Projectile[%s]"
+                      (projectile-project-name))))
+
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 (require 'asm-mode)
 (add-hook 'asm-mode-hook (lambda ()
