@@ -2,10 +2,11 @@
 														:port 6697
 														:channels ("##math" "##crypto" "##physics" "#haskell" "##opengl" "#lisp" "##electronics" "#clojure" "#clojurescript")
 														:encryption tls)
-													 ("irc.mozilla.org"
-														:port 6697
-														:channels ("#rust" "#rust-gamedev" "#rust-crypto")
-														:encryption tls)))
+													 ;; ("irc.mozilla.org"
+													 ;; 	:port 6697
+													 ;; 	:channels ("#rust" "#rust-gamedev" "#rust-crypto")
+													 ;; 	:encryption tls)
+													 ))
 
 
 (setq rcirc-default-nick irc-handle)

@@ -34,8 +34,10 @@
 (require 'haskell-customize)
 (setq haskell-stylish-on-save 't)
 
+;; Python
 (require 'flycheck)
 (setq flycheck-python-pycompile-executable "/usr/bin/python3")
+(add-hook 'python-mode-hook #'pipenv-mode)
 
 
 
