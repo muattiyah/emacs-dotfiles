@@ -6,7 +6,9 @@
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-cb" 'org-iswitchb)
 
-(org-indent-mode)
+
+(add-hook 'org-mode-hook 'org-indent-mode)
+
 
 ;; Information to record when a task moves to the DONE state.
 (setq org-log-done t)
