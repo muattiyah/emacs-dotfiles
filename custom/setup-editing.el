@@ -34,12 +34,6 @@
 (require 'haskell-customize)
 (setq haskell-stylish-on-save 't)
 
-;; Python
-(require 'flycheck)
-(setq flycheck-python-pycompile-executable "/usr/bin/python3")
-(add-hook 'python-mode-hook #'pipenv-mode)
-
-
 
 ;;; Common Lisp ;;;
 (load (expand-file-name "/Users/muhammad/quicklisp/slime-helper.el"))
