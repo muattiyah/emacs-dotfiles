@@ -57,5 +57,12 @@
 
 
 
+;; Minimap-style
+;; (require 'sublimity)
+;; (require 'sublimity-scroll)
+;; (require 'sublimity-map) ;; experimental
+;; (require 'sublimity-attractive)
+;; (sublimity-mode 1)
+
 (provide 'setup-editing)
 ;;; setup-editing ends here
