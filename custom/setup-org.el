@@ -13,7 +13,7 @@
 ;; Information to record when a task moves to the DONE state.
 (setq org-log-done t)
 
-(setq org-agenda-files (list "~/org/personal.org"))
+(setq org-agenda-files (list "~/org/work.org"))
 
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 't)))
