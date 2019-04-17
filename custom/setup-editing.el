@@ -11,10 +11,10 @@
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 (add-hook 'ibuffer-hook
-    (lambda ()
-      (ibuffer-projectile-set-filter-groups)
-      (unless (eq ibuffer-sorting-mode 'alphabetic)
-        (ibuffer-do-sort-by-alphabetic))))
+          (lambda ()
+            (ibuffer-projectile-set-filter-groups)
+            (unless (eq ibuffer-sorting-mode 'alphabetic)
+              (ibuffer-do-sort-by-alphabetic))))
 
 (require 'asm-mode)
 (add-hook 'asm-mode-hook (lambda ()
