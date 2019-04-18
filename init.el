@@ -17,10 +17,15 @@
 (setq-default show-trailing-whitespace t)
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+;; Make ansi-term and zsh play nice
+(setq system-uses-terminfo nil)
+
 
 ;; Packages
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+;; (add-to-list 'package-archives
+;;              '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 (package-initialize)
 
 ;; Personal Configuration
@@ -82,7 +87,7 @@ white-sand-theme with-editor async zenburn-theme))
  '(org-list-allow-alphabetical t)
  '(package-selected-packages
    (quote
-    (web-mode darktooth-theme which-key docker-compose-mode dockerfile-mode python-pytest py-autopep8 company-jedi 0blayout tide pipenv rcirc-notify plan9-theme restclient go-mode markdown-mode yaml-mode glsl-mode gruvbox-theme password-store slime slime-theme ## sml-mode clojure-cheatsheet neotree intero ranger ggtags flycheck white-sand-theme flatui-theme ido-vertical-mode rust-mode figlet zenburn-theme doom-themes elfeed-web elfeed nyan-mode powerline nlinum selectric-mode org-bullets fill-column-indicator elisp-format circe sicp ledger-mode latex-preview-pane exec-path-from-shell auctex org flatland-black-theme flatland-theme haskell-mode ibuffer-projectile ibuffer-rcirc solarized-theme rainbow-delimiters paredit cider magit ag projectile spacemacs-theme smex)))
+    (magit know-your-http-well web-mode darktooth-theme which-key docker-compose-mode dockerfile-mode python-pytest py-autopep8 company-jedi 0blayout tide pipenv rcirc-notify plan9-theme restclient go-mode markdown-mode yaml-mode glsl-mode gruvbox-theme password-store slime slime-theme ## sml-mode clojure-cheatsheet neotree intero ranger ggtags flycheck white-sand-theme flatui-theme ido-vertical-mode rust-mode figlet zenburn-theme doom-themes elfeed-web elfeed nyan-mode powerline nlinum selectric-mode org-bullets fill-column-indicator elisp-format circe sicp ledger-mode latex-preview-pane exec-path-from-shell auctex org flatland-black-theme flatland-theme haskell-mode ibuffer-projectile ibuffer-rcirc solarized-theme rainbow-delimiters paredit cider ag projectile spacemacs-theme smex)))
  '(ring-bell-function (quote ignore))
  '(selectric-mode nil)
  '(which-key-mode t))
