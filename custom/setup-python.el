@@ -6,7 +6,7 @@
 (setq flycheck-python-pycompile-executable "/usr/local/bin/python3")
 (setq flycheck-python-flake8-executable "flake8")
 
-(add-hook 'python-mode-hook #'pipenv-mode)
+;; (add-hook 'python-mode-hook #'pipenv-mode)
 
 
 ;; Company Mode
