@@ -10,9 +10,9 @@
 
 
 ;; Company Mode
-(require 'company)
-(add-to-list 'company-backends 'company-jedi)
-(add-hook 'python-mode-hook #'company-mode)
+;; (require 'company)
+;; (add-to-list 'company-backends 'company-jedi)
+;; (add-hook 'python-mode-hook #'company-mode)
 
 ;; Formatting
 (require 'py-autopep8)
