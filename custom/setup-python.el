@@ -19,5 +19,10 @@
 (add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
 
 
+;; pytest
+(setq python-pytest-executable "python -m venv")
+(global-set-key (kbd "C-c C-p t") 'python-pytest-dispatch)
+
+
 (provide 'setup-python)
 ;;; setup-python ends here
