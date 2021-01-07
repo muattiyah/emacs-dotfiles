@@ -7,3 +7,7 @@ projectile-bookmarks.eld
 *.*~
 /smex-items
 url/
+/.python-environments/
+/ede-projects.el
+/ido.last
+/projectile.cache

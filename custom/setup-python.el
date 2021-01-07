@@ -20,8 +20,8 @@
 
 
 ;; pytest
-(setq python-pytest-executable "python -m venv")
-(global-set-key (kbd "C-c C-p t") 'python-pytest-dispatch)
+(setq python-pytest-executable "python -m pytest")
+(global-set-key (kbd "C-c t") 'python-pytest-dispatch)
 
 
 (provide 'setup-python)
