@@ -42,7 +42,7 @@
 
 
 ;;; Common Lisp ;;;
-(load (expand-file-name "/Users/muhammad/quicklisp/slime-helper.el"))
+(load (expand-file-name "~/quicklisp/slime-helper.el"))
 (setq inferior-lisp-program "/usr/local/bin/sbcl")
 (setq slime-contribs '(slime-repl))
 
